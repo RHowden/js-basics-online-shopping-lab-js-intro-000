@@ -49,15 +49,18 @@ function total() {
 }
 
 function removeFromCart(item) {
-  var itemIndex = cart.findIndex(o => o.itemName === item)
-  //var itemIndex = cart.indexOf(arrayItem)
-  if (itemIndex === -1) {
-    return 'That item is not in your cart.'
+  if (cart) {
+    var itemIndex = cart.findIndex(o => o.itemName === item)
+    //var itemIndex = cart.indexOf(arrayItem)
+    if (itemIndex === -1) {
+      return 'That item is not in your cart.'
+    }
+    else {
+      cart = cart.splice(itemIndex, 1)
+      return cart
+    }
   }
-  else {
-    cart = cart.splice(itemIndex, 1)
-    return cart
-  }
+  
 }
 
 function placeOrder(cardNumber) {
