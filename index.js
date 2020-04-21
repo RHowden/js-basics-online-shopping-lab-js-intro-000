@@ -49,11 +49,12 @@ function total() {
 }
 
 function removeFromCart(item) {
-  if (cart.includes(item)) {
-
+  var itemIndex = cart.indexOf(item)
+  if (itemIndex === -1) {
+    return 'That item is not in your cart.'
   }
   else {
-    return 'That item is not in your cart.'
+
   }
 }
 
