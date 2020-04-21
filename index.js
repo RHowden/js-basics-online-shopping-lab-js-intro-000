@@ -24,7 +24,7 @@ function viewCart() {
     var result = 'In your cart, you have '
     for (var i = 0; i < cart.length - 1; i++) {
       result += `${cart[i].itemName} at $${cart[i].itemPrice}, `
-    } 
+    }
 
     result += `and ${cart[i].itemName} at $${cart[i].itemPrice}.`
     return result
