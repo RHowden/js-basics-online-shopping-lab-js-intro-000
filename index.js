@@ -59,7 +59,7 @@ function removeFromCart(item) {
     return cart
   }*/
 
-  bool found = false
+  found = false
   for (var i = 0; i < array.length; i++) {
     array[i]
   }
