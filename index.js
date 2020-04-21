@@ -60,8 +60,8 @@ function removeFromCart(item) {
   }*/
 
   var found = false
-  for (var i = 0; i < array.length; i++) {
-    array[i]
+  for (var i = 0; i < cart.length; i++) {
+    
   }
 
   if (found === false) {
