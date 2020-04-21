@@ -49,20 +49,22 @@ function total() {
 }
 
 function removeFromCart(item) {
-  if (cart) {
-    var itemIndex = cart.findIndex(o => o.itemName === item)
-    //var itemIndex = cart.indexOf(arrayItem)
-    if (itemIndex === -1) {
-      return 'That item is not in your cart.'
-    }
-    else {
-      cart = cart.splice(itemIndex, 1)
-      return cart
-    }
+  var itemIndex = cart.findIndex(o => o.itemName === item)
+  //var itemIndex = cart.indexOf(arrayItem)
+  if (itemIndex === -1) {
+    return 'That item is not in your cart.'
   }
-
+  else {
+    cart = cart.splice(itemIndex, 1)
+    return cart
+  }
 }
 
 function placeOrder(cardNumber) {
-  // write your code here
+  if (cardNumber) {
+
+  }
+  else {
+    return 'Sorry, we don\'t have a credit card on file for you.'
+  }
 }
